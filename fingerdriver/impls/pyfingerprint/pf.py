@@ -99,8 +99,8 @@ class PfDriver(FingerDeviceDriver):
         if self.__f is None or not self.is_initialized or self.__is_connect_status_changed:
             self.initialize_device()
 
-    def enroll_template(self, template_id: Optional[int] = 0) -> Generator[
-        Tuple[GeneratorStatus, None], Tuple[GeneratorStatus, Optional[Finger]], None]:
+    def enroll_template(self, template_id: Optional[int] = 0) -> \
+            Generator[Tuple[GeneratorStatus, None], Tuple[GeneratorStatus, Optional[Finger]], None]:
         self.ensure_initialized()
 
         yield GeneratorStatus(True, FingerPrintDeviceStatusCollection.CONTINUE_TO_NEXT_SCAN), None

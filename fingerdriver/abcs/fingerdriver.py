@@ -55,8 +55,10 @@ class FingerDeviceDriver(metaclass=ABCMeta):
         pass
 
     @abstractmethod
-    def enroll_template(self, template_id: Optional[int] = 0) -> Generator[
-        Tuple[GeneratorStatus, None], Tuple[GeneratorStatus, None], Tuple[GeneratorStatus, Optional[Finger]]]:
+    def enroll_template(self, template_id: Optional[int] = 0) -> \
+            Generator[
+                Tuple[GeneratorStatus, None], Tuple[GeneratorStatus, None], Tuple[GeneratorStatus, Optional[Finger]]
+            ]:
         pass
 
     @abstractmethod
@@ -85,5 +87,5 @@ class FingerDeviceDriver(metaclass=ABCMeta):
 
     @abstractmethod
     def get_template_index_table(self) -> (
-    FingerPrintDeviceStatus, Union[Dict[int, List[Optional[Finger]]], List[Optional[Finger]]]):
+            FingerPrintDeviceStatus, Union[Dict[int, List[Optional[Finger]]], List[Optional[Finger]]]):
         pass
