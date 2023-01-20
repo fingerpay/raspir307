@@ -41,7 +41,7 @@ class FingerPrintDeviceStatusCollection:
     )
 
     CONTINUE_CREATING_IMAGE: FingerPrintDeviceStatus = FingerPrintDeviceStatus(
-        0x102, "CREATIING_IMAGE_CONTINUE", False,
+        0x102, "CREATING_IMAGE_CONTINUE", False,
         "Creating the image... Please call next and wait a second."
     )
 
@@ -73,7 +73,7 @@ class FingerPrintDeviceStatusCollection:
     )
 
     ERROR_READIMAGE: FingerPrintDeviceStatus = FingerPrintDeviceStatus(
-        0x03, "READIMEGA_ERROR", True,
+        0x03, "READIMAGE_ERROR", True,
         "Failed to read the image."
     )
 
