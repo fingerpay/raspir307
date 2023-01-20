@@ -1,7 +1,6 @@
-from typing import Optional, Generator, Tuple
+from typing import Generator
 
 from fingerdriver.statics.status import GeneratorStatus
-from fingerdriver.models.finger import Finger
 
 from fingerdriver.impls.pyfingerprint.pf import PfDriver
 
