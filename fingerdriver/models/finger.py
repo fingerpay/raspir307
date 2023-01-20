@@ -1,4 +1,4 @@
-from typing import Optional, Any, Type
+from typing import Optional, Type
 
 
 class Finger:
