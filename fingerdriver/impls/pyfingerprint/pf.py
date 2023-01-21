@@ -28,7 +28,7 @@ class PfDriver(FingerDeviceDriver):
         self.__scan_interval: int = scan_interval
         self.__is_initialized: bool = False
 
-        self.__is_connect_status_changed: bool = True
+        self.__needs_reinitialize: bool = True
 
         self.__BOUND_RATE: int = PfDriver.__BOUND_RATE
         self.__ADDRESS: int = PfDriver.__ADDRESS
@@ -45,7 +45,7 @@ class PfDriver(FingerDeviceDriver):
     def port(self, port: str) -> None:
         self.__port = port
 
-        self.__is_connect_status_changed = True
+        self.__needs_reinitialize = True
 
     @property
     def password(self) -> int:
@@ -55,7 +55,7 @@ class PfDriver(FingerDeviceDriver):
     def password(self, password: int) -> None:
         self.__password = password
 
-        self.__is_connect_status_changed = True
+        self.__needs_reinitialize = True
 
     @property
     def is_initialized(self) -> bool:
@@ -93,10 +93,10 @@ class PfDriver(FingerDeviceDriver):
 
             raise FingerPrintDeviceException(unknown_error, e)
 
-        self.__is_connect_status_changed = False
+        self.__needs_reinitialize = False
 
     def ensure_initialized(self) -> None:
-        if self.__f is None or not self.is_initialized or self.__is_connect_status_changed:
+        if self.__f is None or not self.is_initialized or self.__needs_reinitialize:
             self.initialize_device()
 
     def enroll_template(self, template_id: Optional[int] = 0) -> \
