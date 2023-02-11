@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "raspir307"
+version = "0.0.2"
+description = "A library for R307 fingerprint module using RaspberryPi / RaspberryPi を用いた R307 指紋モジュールのライブラリ"
+authors = ["FINGER PAY <github@fingerpay.app>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pyfingerprint = "^1.5"
+adafruit-fingerprint = "^1.0.0"
+adafruit-circuitpython-fingerprint = "^2.2.10"
+board = "^1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
