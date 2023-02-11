@@ -2,7 +2,7 @@ from typing import Optional
 
 import traceback
 
-from raspir307.fingerdriver.statics.status import FingerPrintDeviceStatus
+from raspir307.statics.status import FingerPrintDeviceStatus
 
 
 class FingerPrintDeviceException(BaseException):

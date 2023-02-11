@@ -6,14 +6,14 @@ from pyfingerprint.pyfingerprint import FINGERPRINT_CHARBUFFER1
 from pyfingerprint.pyfingerprint import FINGERPRINT_CHARBUFFER2
 from pyfingerprint.pyfingerprint import PyFingerprint
 
-from raspir307.fingerdriver.statics.status import FingerPrintDeviceStatus
-from raspir307.fingerdriver.statics.status import FingerPrintDeviceStatusCollection
+from raspir307.statics.status import FingerPrintDeviceStatus
+from raspir307.statics.status import FingerPrintDeviceStatusCollection
 
-from raspir307.fingerdriver.statics.status import GeneratorStatus
-from raspir307.fingerdriver.statics.exceptions import FingerPrintDeviceException
-from raspir307.fingerdriver.models.finger import Finger
+from raspir307.statics.status import GeneratorStatus
+from raspir307.statics.exceptions import FingerPrintDeviceException
+from raspir307.models.finger import Finger
 
-from raspir307.fingerdriver.abcs.fingerdriver import FingerDeviceDriver
+from raspir307.abcs.fingerdriver import FingerDeviceDriver
 
 
 class PfDriver(FingerDeviceDriver):
