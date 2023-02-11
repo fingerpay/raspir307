@@ -1,8 +1,8 @@
 from typing import Generator
 
-from fingerdriver.statics.status import GeneratorStatus
+from raspir307.statics.status import GeneratorStatus
 
-from fingerdriver.impls.pyfingerprint.pf import PfDriver
+from raspir307.impls.pyfingerprint.pf import PfDriver
 
 if __name__ == "__main__":
     PATH_TO_SAVE: str = "/tmp/fp.bmp"

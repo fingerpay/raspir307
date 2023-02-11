@@ -1,9 +1,9 @@
 from typing import Optional, Generator
 
-from fingerdriver.statics.status import GeneratorStatus
-from fingerdriver.models.finger import Finger
+from raspir307.statics.status import GeneratorStatus
+from raspir307.models.finger import Finger
 
-from fingerdriver.impls.pyfingerprint.pf import PfDriver
+from raspir307.impls.pyfingerprint.pf import PfDriver
 
 if __name__ == "__main__":
     driver: PfDriver = PfDriver(port="/dev/serial0")
