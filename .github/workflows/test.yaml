@@ -24,6 +24,7 @@ jobs:
 
       - name: Setup environment
         run: |
+          pip install poetry
           poetry config settings.virtualenvs.create false
           poetry install
 
