@@ -2,9 +2,9 @@ from typing import Optional, Union, Generator, Tuple, List, Dict
 
 from abc import ABCMeta, abstractmethod
 
-from fingerdriver.statics.status import FingerPrintDeviceStatus
-from fingerdriver.statics.status import GeneratorStatus
-from fingerdriver.models.finger import Finger
+from raspir307.statics.status import FingerPrintDeviceStatus
+from raspir307.statics.status import GeneratorStatus
+from raspir307.models.finger import Finger
 
 
 class FingerDeviceDriver(metaclass=ABCMeta):

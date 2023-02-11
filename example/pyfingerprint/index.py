@@ -1,9 +1,9 @@
 from typing import Tuple, List, Dict
 
-from fingerdriver.statics.status import FingerPrintDeviceStatus
-from fingerdriver.models.finger import Finger
+from raspir307.statics.status import FingerPrintDeviceStatus
+from raspir307.models.finger import Finger
 
-from fingerdriver.impls.pyfingerprint.pf import PfDriver
+from raspir307.impls.pyfingerprint.pf import PfDriver
 
 if __name__ == "__main__":
     print("This operation may take time. Hold tight...")
