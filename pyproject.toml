@@ -13,6 +13,9 @@ adafruit-circuitpython-fingerprint = "^2.2.10"
 board = "^1.0"
 
 
+[tool.poetry.group.dev.dependencies]
+pip-licenses = "^4.0.3"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
