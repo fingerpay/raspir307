@@ -7,7 +7,7 @@ on:
     types: [ opened, synchronize ]
 
 jobs:
-  django_test:
+  build_test:
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 2
