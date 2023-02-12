@@ -1,6 +1,6 @@
 [project]
 name = "raspir307"
-version = "0.0.2"
+version = "0.0.1"
 description = "A library for R307 fingerprint module using RaspberryPi / RaspberryPi を用いた R307 指紋モジュールのライブラリ"
 authors = [
     { name = "FINGER PAY", email = "github@fingerpay.app" },
@@ -25,7 +25,7 @@ exclude = [
 
 [tool.poetry]
 name = "raspir307"
-version = "0.0.2"
+version = "0.0.1"
 description = "A library for R307 fingerprint module using RaspberryPi / RaspberryPi を用いた R307 指紋モジュールのライブラリ"
 authors = [
     "FINGER PAY <github@fingerpay.app>",
